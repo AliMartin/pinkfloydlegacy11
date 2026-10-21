@@ -1,0 +1,11 @@
+uuid: 0ea67bdd-93de-45e4-8945-aec85210f9f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.promoter_logo
+label: 'Promoter logo'
+description: ''
+targetEntityType: taxonomy_term
+cache: true

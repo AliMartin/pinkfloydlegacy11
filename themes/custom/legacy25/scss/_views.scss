@@ -1,0 +1,306 @@
+/* Front page shows block */
+#block-legacy25-views-block-shows-block-3 {
+  .view-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .views-row {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $gray;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  .views-field-nothing,
+  .views-field-view-node {
+    display: table-cell;
+  }
+
+  .views-field-view-node {
+    width: 100px;
+    vertical-align: middle;
+    text-align: right; 
+  }
+  
+  .show-date {
+    font-weight: 200;
+    font-size: large;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+  }
+
+  .show-title {
+    margin-bottom: 5px;
+
+    a {
+      font-family: $headings-font-family;
+      font-size: xx-large;
+      line-height: 1;
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+    }
+  }
+
+  .show-location {
+    font-size: medium;
+    line-height: 1;
+    letter-spacing: 3px;
+    font-weight: $font-weight-bold;
+  }
+
+  .show-country {
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  #block-legacy25-views-block-shows-block-3 {
+    .views-row {
+      text-align: center;
+    }
+    .views-field-nothing {
+      display: block;
+      margin-bottom: 15px;
+    }
+    .show-date {
+      font-size: medium;
+    }
+    .show-title a {
+      font-size: x-large;
+    }
+    .views-field-view-node {
+      display: inline-block;
+    }
+  }
+}
+
+
+// Shows page
+.view-shows.view-display-id-insert_view {
+  text-align: center;
+  margin-bottom: 120px;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .view-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .views-row {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $gray-800;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  .views-field-field-date {
+    font-weight: 200;
+    font-size: large;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+  }
+
+  .views-field-title {
+    margin-bottom: 15px;
+
+    a {
+      font-family: $headings-font-family;
+      font-size: xx-large;
+      line-height: 1;
+      color: $white;
+  
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+    }
+  }
+  
+  .views-field-field-address-locality {
+    font-size: medium;
+    line-height: 1;
+    letter-spacing: 3px;
+    font-weight: $font-weight-bold;
+    margin-bottom: 5px;
+  }
+
+  .views-field-field-address-country-code {
+    font-size: medium;
+    line-height: 1;
+    letter-spacing: 3px;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .view-shows.view-display-id-insert_view {
+    .show-date {
+      font-size: medium;
+    }
+    .show-title a {
+      font-size: x-large;
+    }
+  }
+}
+
+
+
+// Front page news and news page
+#block-legacy25-views-block-news-block-1,
+.view-news.view-display-id-page_1 {
+  h1, h2 {
+    margin-bottom: 30px;
+  }
+
+  .view-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;  
+  }
+
+  .views-row {
+    min-height: 222px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $gray-800;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  .views-field-field-image {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 200px;
+      outline: none;
+      border: 1px solid $gray;
+    }
+  }
+
+  .views-field-nothing {
+    overflow: auto;
+
+    .section {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: medium;
+      line-height: 1;
+      font-weight: $font-weight-bold;
+      margin-bottom: 7.5px;
+    }
+  }
+
+  .views-field-nothing .created {
+    font-family: $headings-font-family;
+    font-size: large;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+
+  .views-field-nothing .title {
+    margin-bottom: 15px;
+
+    a {
+      font-family: $headings-font-family;
+      font-size: xx-large;
+      line-height: 1;
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+    }
+  }
+
+  .views-field-nothing .teaser {
+    margin-bottom: 15px;
+  }
+
+  .more-link {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  #block-legacy25-views-block-news-block-1,
+  .view-news.view-display-id-page_1 {
+    .views-row {
+      text-align: center;
+    }
+    .views-field-field-image {
+      float: inherit;
+      margin-right: 0;
+    }
+  }
+}
+
+
+
+// Biographies
+.view-band-biographies.view-display-id-insert_view {
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px
+  }
+  .views-row {
+    img {
+      width: 160px;
+      height: 160px;
+      border-radius: 80px;
+      border: 1px solid $white;
+      margin: 0 0 10px 0;
+    }
+    .biog-title {
+      max-width: 160px;
+      text-align: center;
+      font-family: $headings-font-family;
+      font-size: medium;
+      line-height: 1.2;
+    }
+    a {
+      color: $white;
+    }
+
+    a:hover,
+    a:focus {
+      color: $primary;
+      img {
+        border: 1px solid $primary;
+      }
+    }
+  }
+}

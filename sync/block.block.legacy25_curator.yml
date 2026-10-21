@@ -1,0 +1,28 @@
+uuid: 81c1e3f4-698b-4fa3-9139-eb5e5d3a3dba
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3bb81792-b363-46ae-a1db-2fdb6ea1c7d2'
+  module:
+    - block_content
+    - system
+  theme:
+    - legacy25
+id: legacy25_curator
+theme: legacy25
+region: content
+weight: 1
+provider: null
+plugin: 'block_content:3bb81792-b363-46ae-a1db-2fdb6ea1c7d2'
+settings:
+  id: 'block_content:3bb81792-b363-46ae-a1db-2fdb6ea1c7d2'
+  label: 'Follow us on Facebook'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

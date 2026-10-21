@@ -1,0 +1,22 @@
+uuid: 449f4f16-750e-456d-ab92-3d1b75fa9da2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - legacy25
+_core:
+  default_config_hash: gynNtS1PZ_gV7wPiJMO-iTjQ9rZgfFfdmhm90M-BuxQ
+id: legacy25_local_tasks
+theme: legacy25
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

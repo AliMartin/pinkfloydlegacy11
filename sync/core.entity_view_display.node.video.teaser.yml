@@ -1,0 +1,105 @@
+uuid: 128916bf-b515-4693-9ec4-4e506bec28a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.video.body
+    - field.field.node.video.field_metatags
+    - field.field.node.video.field_video
+    - node.type.video
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - manage_display
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          cb076a7e-79f6-42a9-b2db-f4bcbc7359d4:
+            uuid: cb076a7e-79f6-42a9-b2db-f4bcbc7359d4
+            region: content
+            configuration:
+              id: 'field_block:node:video:title'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: title
+                label: hidden
+                settings:
+                  link_to_entity: true
+                  tag: h2
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          c0a876a6-e191-4b67-915a-0b0bf9a3df87:
+            uuid: c0a876a6-e191-4b67-915a-0b0bf9a3df87
+            region: content
+            configuration:
+              id: 'extra_field_block:node:video:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          87bf0413-924c-442c-afd7-ceca28326c40:
+            uuid: 87bf0413-924c-442c-afd7-ceca28326c40
+            region: content
+            configuration:
+              id: 'field_block:node:video:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.video.teaser
+targetEntityType: node
+bundle: video
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -49
+    region: content
+hidden:
+  created: true
+  field_metatags: true
+  field_video: true
+  uid: true

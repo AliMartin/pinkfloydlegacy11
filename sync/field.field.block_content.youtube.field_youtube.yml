@@ -1,0 +1,21 @@
+uuid: 23f63eb6-062e-4cfa-8bf3-9fc49d22b11e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.youtube
+    - field.storage.block_content.field_youtube
+  module:
+    - youtube
+id: block_content.youtube.field_youtube
+field_name: field_youtube
+entity_type: block_content
+bundle: youtube
+label: YouTube
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: youtube

@@ -1,0 +1,20 @@
+uuid: 50351344-0af4-4ee6-b9b6-2df5fb5c12af
+langcode: en
+status: true
+dependencies:
+  module:
+    - gtranslate
+  theme:
+    - legacy25
+id: legacy25_gtranslate
+theme: legacy25
+region: translate
+weight: -8
+provider: null
+plugin: gtranslate_block
+settings:
+  id: gtranslate_block
+  label: GTranslate
+  label_display: '0'
+  provider: gtranslate
+visibility: {  }

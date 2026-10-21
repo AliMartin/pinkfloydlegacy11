@@ -1,0 +1,23 @@
+uuid: e3deed7a-8b25-4dd1-a1b6-ce3a9ad2dd20
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7d0a7a32-827c-4de9-9c86-d66c268f65c6'
+  module:
+    - block_content
+  theme:
+    - legacy25
+id: legacy25_hyperluminal
+theme: legacy25
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:7d0a7a32-827c-4de9-9c86-d66c268f65c6'
+settings:
+  id: 'block_content:7d0a7a32-827c-4de9-9c86-d66c268f65c6'
+  label: Hyperluminal
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

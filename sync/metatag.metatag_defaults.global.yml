@@ -1,0 +1,14 @@
+uuid: bf0f7ffe-8faa-4efb-9917-ce2738731971
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  canonical_url: '[current-page:url]'
+  description: 'Experience the international Pink Floyd tribute featuring Durga McBroom and a stunning live show.'
+  keywords: 'pink floyd, internationl, tribute, show, uk'
+  rights: 'Hyperluminal Limited'
+  title: '[current-page:title] | [site:name]'

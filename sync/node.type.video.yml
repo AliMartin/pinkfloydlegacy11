@@ -1,0 +1,17 @@
+uuid: b7cb0766-89a1-4367-9a2f-4e31868bdc82
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Video
+type: video
+description: 'Add a <em>video</em> to the website.'
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

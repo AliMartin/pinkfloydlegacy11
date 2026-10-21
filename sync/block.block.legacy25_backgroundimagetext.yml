@@ -1,0 +1,20 @@
+uuid: b1b4570d-304d-42f1-afd5-5919fe7dacfe
+langcode: en
+status: true
+dependencies:
+  module:
+    - background_image
+  theme:
+    - legacy25
+id: legacy25_backgroundimagetext
+theme: legacy25
+region: background_image
+weight: 0
+provider: null
+plugin: background_image_text
+settings:
+  id: background_image_text
+  label: 'Background Image - Text'
+  label_display: ''
+  provider: background_image
+visibility: {  }

@@ -1,0 +1,71 @@
+// Curator feed
+#block-legacy25-curator {
+  margin-top: 30px;
+  margin-bottom: 90px;
+
+  a {
+    border-bottom: inherit;
+  }
+
+  article {
+    background-color: rgba(0,0,0,0.75);
+    border-radius: $border-radius;
+    border-color: inherit;
+    border-width: inherit;
+    font-size: 0.9rem;
+    margin: 0 5px 10px 5px;
+
+    > div {
+      // border: 1px solid $white !important;
+      border-radius: $border-radius;
+    }
+
+    .crt-image {
+      border-radius: $border-radius $border-radius 0 0;
+    }
+
+    .crt-post-border {
+      border: inherit;
+    }
+
+    .crt-social-icon svg {
+      color: $white;
+    }
+
+    .crt-post-fullname a {
+      color: $white;
+      text-decoration: none;
+    }
+
+    .crt-post-title {
+      color: $white;
+    }
+
+    .crt-post-text {
+      color: $white;
+      
+      a {
+        color: $white;
+        text-decoration: none;
+        &:hover {
+          color: $white;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .crt-post-footer {
+      background-color: rgba(0,0,0,0.75);
+      border-radius: 0 0 $border-radius $border-radius;
+      a {
+        color: $white;
+        text-decoration: none;
+        opacity: 1;
+      }
+    }
+
+    .crt-post-share {
+      display: none;
+    }
+  }
+}

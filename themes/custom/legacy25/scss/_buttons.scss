@@ -1,0 +1,23 @@
+.btn,
+.more a,
+.more-link a,
+.field--name-field-link a,
+.views-field-view-node a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: $white;
+  border: 1px solid $primary;
+  background-color: $primary;
+  text-transform: uppercase;
+  text-align: center;
+  outline: none;
+  font-size: large;
+  line-height: 1;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $secondary;
+    background-color: $secondary;
+  }
+}

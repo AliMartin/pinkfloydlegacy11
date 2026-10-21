@@ -1,0 +1,20 @@
+uuid: 6e43298a-ea2f-4b9c-87bc-42030fdacbb2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - legacy25
+_core:
+  default_config_hash: vwlNAf_StHt6u3R7nVXLNqHvuoZTrTPvMDruEZU006Q
+id: legacy25_local_actions
+theme: legacy25
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

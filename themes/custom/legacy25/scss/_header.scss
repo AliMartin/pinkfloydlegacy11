@@ -1,0 +1,48 @@
+header {
+  margin-bottom: 60px;
+
+  nav.navbar {
+    padding-bottom: 0;
+  }
+}
+
+
+#block-legacy25-branding {
+  position: absolute;
+  top: -45px;
+  z-index: 99;
+
+  img {
+    padding: 10px 0;
+    height: 110px;
+  }
+}
+
+
+.region.region-translate {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  align-items: center;
+}
+
+#block-legacy25-gtranslate {
+  .gtranslate_wrapper {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width : 991px) {
+  #block-legacy25-branding {
+    top: -80px;
+    img {
+      height: 70px;
+    }
+  }
+  .region-translate {
+    height: 80px;
+  }
+}

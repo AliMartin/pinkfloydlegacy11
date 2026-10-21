@@ -1,0 +1,160 @@
+uuid: 53514d1e-b84d-4658-87e6-a30c28e70691
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.video.body
+    - field.field.node.video.field_metatags
+    - field.field.node.video.field_video
+    - node.type.video
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - manage_display
+    - metatag
+    - text
+    - video
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          250b193d-5155-4984-b1cc-14c4fbe5f7b5:
+            uuid: 250b193d-5155-4984-b1cc-14c4fbe5f7b5
+            region: content
+            configuration:
+              id: 'field_block:node:video:title'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: title
+                label: hidden
+                settings:
+                  link_to_entity: true
+                  tag: h2
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e2b577f8-9a56-419f-a484-5d4139bac390:
+            uuid: e2b577f8-9a56-419f-a484-5d4139bac390
+            region: content
+            configuration:
+              id: 'field_block:node:video:field_video'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: video_player_list
+                label: hidden
+                settings:
+                  controls: true
+                  autoplay: true
+                  loop: false
+                  muted: false
+                  width: 100%
+                  height: 700px
+                  preload: none
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          db542a57-3110-4094-a170-aaab9c1e175f:
+            uuid: db542a57-3110-4094-a170-aaab9c1e175f
+            region: content
+            configuration:
+              id: 'field_block:node:video:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          09ec78d7-6cbb-44ef-89c5-370a8503845b:
+            uuid: 09ec78d7-6cbb-44ef-89c5-370a8503845b
+            region: content
+            configuration:
+              id: 'extra_field_block:node:video:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+          efa951e9-c33f-4fc4-9395-ec80ba00df0e:
+            uuid: efa951e9-c33f-4fc4-9395-ec80ba00df0e
+            region: content
+            configuration:
+              id: 'field_block:node:video:field_metatags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: metatag_empty_formatter
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+id: node.video.default
+targetEntityType: node
+bundle: video
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_video:
+    type: video_player_list
+    label: hidden
+    settings:
+      controls: true
+      autoplay: true
+      loop: false
+      muted: false
+      width: 100%
+      height: 700px
+      preload: none
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -49
+    region: content
+hidden:
+  created: true
+  uid: true

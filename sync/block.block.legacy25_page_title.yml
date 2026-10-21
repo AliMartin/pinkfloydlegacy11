@@ -1,0 +1,20 @@
+uuid: 010101a8-43ae-4349-890e-086926173372
+langcode: en
+status: false
+dependencies:
+  theme:
+    - legacy25
+_core:
+  default_config_hash: xvQvCv3IUmcFu7u4_ai08MH3NJxHhTi9-wFisEudEuU
+id: legacy25_page_title
+theme: legacy25
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

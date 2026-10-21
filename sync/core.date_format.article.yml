@@ -1,0 +1,8 @@
+uuid: 165e9c17-f830-4bcd-be01-271b7dfb0bc3
+langcode: en
+status: true
+dependencies: {  }
+id: article
+label: Article
+locked: false
+pattern: 'l d F Y'

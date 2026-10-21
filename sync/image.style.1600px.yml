@@ -1,0 +1,15 @@
+uuid: 0b7035f4-f760-41b1-9399-70adcf16c331
+langcode: en
+status: true
+dependencies: {  }
+name: 1600px
+label: 1600px
+effects:
+  72971460-1103-4684-b08a-ea47cfc15464:
+    uuid: 72971460-1103-4684-b08a-ea47cfc15464
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 700
+      anchor: center-center

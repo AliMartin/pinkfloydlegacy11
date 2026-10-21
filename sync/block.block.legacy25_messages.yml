@@ -1,0 +1,22 @@
+uuid: b74385f8-9684-4f7c-918d-854ff42e6cd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - legacy25
+_core:
+  default_config_hash: xR4yiwkEdwIiix1lVYB1Fza_3hF5RasjMCIY7QE5OR0
+id: legacy25_messages
+theme: legacy25
+region: content
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,15 @@
+uuid: 7e8c11bd-1177-4b5b-9dd4-cf9a7ae8fbf2
+langcode: en
+status: true
+dependencies: {  }
+name: promoter_logo
+label: 'Promoter logo'
+effects:
+  aeed4a5a-0a85-4006-9ee0-3979a5126a75:
+    uuid: aeed4a5a-0a85-4006-9ee0-3979a5126a75
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: false

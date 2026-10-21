@@ -1,0 +1,23 @@
+uuid: 138ee816-2330-4b1b-a5c0-af2fb1f4ef8c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d907beee-9ef4-4814-a749-cb39a2d70f1a'
+  module:
+    - block_content
+  theme:
+    - legacy25
+id: legacy25_sitemap
+theme: legacy25
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:d907beee-9ef4-4814-a749-cb39a2d70f1a'
+settings:
+  id: 'block_content:d907beee-9ef4-4814-a749-cb39a2d70f1a'
+  label: Sitemap
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

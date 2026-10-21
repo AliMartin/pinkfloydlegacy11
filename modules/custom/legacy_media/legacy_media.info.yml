@@ -1,0 +1,6 @@
+name: Legacy media recovery
+type: module
+description: Preserves legacy Instagram media as external links without remote API calls.
+core_version_requirement: ^11
+dependencies:
+  - drupal:media

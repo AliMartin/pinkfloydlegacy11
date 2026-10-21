@@ -1,0 +1,20 @@
+uuid: 0fabb2e7-6209-4bfe-8deb-5f8cc28c91f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - background_image
+  theme:
+    - legacy25
+id: legacy25_backgroundimage
+theme: legacy25
+region: background_image
+weight: 0
+provider: null
+plugin: background_image
+settings:
+  id: background_image
+  label: 'Background Image'
+  label_display: ''
+  provider: background_image
+visibility: {  }

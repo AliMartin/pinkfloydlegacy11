@@ -1,0 +1,15 @@
+uuid: 01e3c1e2-41a7-4049-9c17-b419965b06a8
+langcode: en
+status: true
+dependencies: {  }
+name: 800px
+label: 800px
+effects:
+  eeaedb5f-2ce0-4e3e-ae4b-b0da49b5e39b:
+    uuid: eeaedb5f-2ce0-4e3e-ae4b-b0da49b5e39b
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: true

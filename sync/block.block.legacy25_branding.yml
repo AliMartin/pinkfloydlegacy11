@@ -1,0 +1,26 @@
+uuid: 25d0c998-e97f-459a-b09d-012ed9c55c2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - legacy25
+_core:
+  default_config_hash: vsuupZz4LmJx8gKJyzYE8PeCCKw1SE-PSLmVx1rgRls
+id: legacy25_branding
+theme: legacy25
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

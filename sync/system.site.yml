@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: en
+uuid: b696512c-fb12-457f-bb06-510459d29aff
+name: 'Pink Floyd Legacy'
+mail: noreply@pinkfloydlegacy.com
+slogan: 'The international tribute to Pink Floyd'
+page:
+  403: /node/3
+  404: /node/3
+  front: /node/3
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

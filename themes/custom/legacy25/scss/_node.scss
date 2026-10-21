@@ -1,0 +1,141 @@
+ul.nav-tabs {
+  justify-content: center;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+.page-node-type-show {
+  main .layout__region--content {
+    text-align: center;
+    margin-bottom: 120px;
+
+    .field--name-field-geofield {
+      margin-bottom: 30px;
+
+      > div {
+        border-radius: $border-radius;
+      }
+    }
+
+    .field--name-field-promoter {
+      font-size: medium;
+      line-height: 1.2;
+      letter-spacing: 3px;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .field--name-title,
+    .field--name-body {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .field--name-title {
+      margin-bottom: 30px;
+    }
+
+    .field--name-field-date {
+      font-weight: 200;
+      font-size: x-large;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      margin-bottom: 15px;
+    }
+
+    .field--name-field-address {
+      font-size: medium;
+      line-height: 1.2;
+      letter-spacing: 3px;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    .field--name-field-link {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+// Basic page layout
+.page-node-type-article,
+.page-node-type-page {
+  .node__content {
+    margin-bottom: 120px;
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .field--name-field-image {
+      margin-bottom: 30px;
+    }
+
+    img {
+      border-radius: $border-radius;
+    }
+
+    .field--name-field-teaser,
+    .field--name-body .field--name-field-media-image,
+    .field--name-body p,
+    .field--name-body ul,
+    .field--name-body ol,
+    .field--name-field-attachments {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .field--name-field-teaser {
+      font-family: $headings-font-family;
+      font-size: xx-large;
+      line-height: 1.25;
+      margin-bottom: 15px;
+    }
+
+    .field--name-body {
+      img {
+        margin: 30px auto;
+      }
+    }
+  }
+}
+
+
+// Additional article tweaks
+.page-node-type-article {
+  .node__content {
+    .field--name-field-section {
+      text-align: center;
+      line-height: 1;
+      letter-spacing: 3px;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      margin-bottom: 30px;      
+    }
+
+    .field--name-field-teaser {
+      font-size: x-large;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 30px;
+    }
+  }
+}
+
+
+// Captcha
+.g-recaptcha.recaptcha-processed > div {
+  margin: auto;
+}

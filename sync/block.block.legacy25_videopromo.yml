@@ -1,0 +1,28 @@
+uuid: 332867da-1aba-446e-bd60-f19a01afbf79
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:youtube:bba0975f-4dfe-46b4-a527-608970e5d9f3'
+  module:
+    - block_content
+    - system
+  theme:
+    - legacy25
+id: legacy25_videopromo
+theme: legacy25
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:bba0975f-4dfe-46b4-a527-608970e5d9f3'
+settings:
+  id: 'block_content:bba0975f-4dfe-46b4-a527-608970e5d9f3'
+  label: 'Video promo'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

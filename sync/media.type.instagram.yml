@@ -1,0 +1,15 @@
+uuid: a3c2687d-0b82-4e8e-a91c-395f6618b83e
+langcode: en
+status: true
+dependencies:
+  module:
+    - legacy_media
+id: instagram
+label: 'Instagram (legacy link)'
+description: 'Historical Instagram media retained as external links.'
+source: legacy_external_link
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_instagram
+field_map: {  }

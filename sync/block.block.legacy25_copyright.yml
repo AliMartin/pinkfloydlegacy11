@@ -1,0 +1,23 @@
+uuid: 2bb14663-c4bd-4526-bc8b-4b00b2c76316
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4540451b-60a8-4cb1-8062-da0699d6ef9a'
+  module:
+    - block_content
+  theme:
+    - legacy25
+id: legacy25_copyright
+theme: legacy25
+region: footer
+weight: -7
+provider: null
+plugin: 'block_content:4540451b-60a8-4cb1-8062-da0699d6ef9a'
+settings:
+  id: 'block_content:4540451b-60a8-4cb1-8062-da0699d6ef9a'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

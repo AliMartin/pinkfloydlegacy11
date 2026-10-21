@@ -1,0 +1,171 @@
+uuid: 31b2ac3d-2d5f-46b2-b0ad-bc49882e3651
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.promoter.field_promoter_
+    - field.field.taxonomy_term.promoter.field_promoter_logo
+    - field.field.taxonomy_term.promoter.field_promoter_name
+    - taxonomy.vocabulary.promoter
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - manage_display
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          2daa568a-318c-434e-be75-9872d3c818f3:
+            uuid: 2daa568a-318c-434e-be75-9872d3c818f3
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:promoter:name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: title
+                label: hidden
+                settings:
+                  link_to_entity: true
+                  tag: h2
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b1aea415-63ae-42f8-9880-e397e0c4f098:
+            uuid: b1aea415-63ae-42f8-9880-e397e0c4f098
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:promoter:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          7ca7abdf-c283-42cb-909b-6079b0681ced:
+            uuid: 7ca7abdf-c283-42cb-909b-6079b0681ced
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:promoter:field_promoter_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          15541c2b-9e67-4781-a6e2-3474d0288afb:
+            uuid: 15541c2b-9e67-4781-a6e2-3474d0288afb
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:promoter:field_promoter_logo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          7914d336-b3b9-4604-8328-f941ea9b9692:
+            uuid: 7914d336-b3b9-4604-8328-f941ea9b9692
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:promoter:field_promoter_'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.promoter.default
+targetEntityType: taxonomy_term
+bundle: promoter
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_promoter_:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_promoter_logo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_promoter_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -49
+    region: content
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: e54c3dce-a69e-4d7e-9df6-966570b52148
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a73e8943-0c90-409f-85a6-37ad1ab4613c'
+  module:
+    - block_content
+  theme:
+    - legacy25
+id: legacy25_sociallinks
+theme: legacy25
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:a73e8943-0c90-409f-85a6-37ad1ab4613c'
+settings:
+  id: 'block_content:a73e8943-0c90-409f-85a6-37ad1ab4613c'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

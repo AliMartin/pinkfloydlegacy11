@@ -1,0 +1,23 @@
+uuid: 61dc7e84-154f-438d-b784-5d132fa49876
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.show
+  module:
+    - node
+id: show
+label: Show
+type: 'canonical_entities:node'
+pattern: '/show/[node:field_date:date:custom:ymd]/[node:title]'
+selection_criteria:
+  9aee929e-3140-457f-8356-a2a52f6f8d12:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      show: show
+selection_logic: and
+weight: -5
+relationships: {  }

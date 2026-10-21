@@ -1,0 +1,9 @@
+uuid: aaaa60af-dc90-463a-a48e-7f05061224e7
+langcode: en
+status: true
+dependencies: {  }
+name: Promoter
+vid: promoter
+description: null
+weight: 0
+new_revision: false

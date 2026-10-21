@@ -1,0 +1,76 @@
+// Bootstrap variables (overrides).
+$form-text-margin-top: 0;
+$legend-font-size: 1rem;
+$table-cell-padding-x: .75rem;
+
+
+// Colours
+$white:     #ffffff !default;
+$black:     #000000 !default;
+$gray:      #BAB1AD !default;
+$gray-dark: #4a4e56 !default;
+$dark:      #1a1a1a !default;
+
+$blue:      #3B7FD9 !default;
+$blue-dark: #07288C !default;
+$pink:      #e5007d !default;
+$purple:    #ad0cf2 !default;
+$green:     #BAD93B !default;
+
+
+// Colour variables
+$primary: $pink;
+$secondary: $purple;
+$success: $green;
+$info: $blue-dark;
+$warning: $purple;
+$danger: $purple;
+$light: $gray;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "black":      $black,
+);
+
+
+// Fonts
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1.25rem;
+$line-height-base: 1.5;
+$font-weight-normal: 200;
+$font-weight-bold: 600;
+$body-color: $white;
+
+$headings-font-family: "Cinzel", sans-serif;
+$headings-font-weight: 400;
+$headings-color: $white;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2.25;
+$h3-font-size: $font-size-base * 2;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+
+// Hyperlinks
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: $secondary;
+$link-hover-decoration: none;
+
+
+// Image border radius
+$border-radius-img: 7px;
+
+
+// Border radius
+$border-radius: 7px;
+$border-radius-img: $border-radius;

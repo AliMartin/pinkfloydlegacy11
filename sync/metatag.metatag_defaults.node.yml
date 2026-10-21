@@ -1,0 +1,14 @@
+uuid: 697f57c6-7989-47fb-8de3-c6e7c629a2a8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  keywords: 'pink floyd, internationl, tribute, show, uk'
+  title: '[node:title] | [site:name]'
+  canonical_url: '[node:url]'
+  description: '[node:field_teaser]'
+  rights: 'Hyperluminal Limited'

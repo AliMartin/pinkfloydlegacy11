@@ -1,0 +1,38 @@
+.path-frontpage {
+  .region-content > div {
+    margin-bottom: 60px;
+  }
+}
+
+.path-frontpage #block-legacy25-content {
+  .field--name-field-teaser {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    //font-family: $headings-font-family;
+    font-size: x-large;
+    line-height: 1.25;
+    text-align: center;
+  }
+}
+
+#block-legacy25-views-block-shows-block-3,
+#block-legacy25-curator {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 30px 10px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+#block-legacy25-views-block-shows-block-3 {
+  background-image: url('/themes/custom/legacy25/images/legacy-14.jpg');
+}
+
+#block-legacy25-curator {
+  background-image: url('/themes/custom/legacy25/images/legacy-05-x.jpg');
+}

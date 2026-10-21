@@ -1,0 +1,17 @@
+ul.navbar-nav {
+  gap: 15px;
+
+  a {
+    font-family: $headings-font-family;
+    color: $white;
+    border-bottom: 3px solid rgba(0,0,0,0);
+    padding: 0;
+
+    &.nav-link.active,
+    &:hover,
+    &:focus {
+      color: $white;
+      border-bottom: 3px solid $primary;
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+    "name": "drupal/legacy-project",
+    "description": "Pink Floyd Legacy Drupal 11 website, with Composer-managed dependencies and frontend libraries.",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/address": "^2.0",
+        "drupal/admin_toolbar": "^3.6",
+        "drupal/background_image": "~2.0.2",
+        "drupal/backup_migrate": "^5.0",
+        "drupal/block_class": "^3.0",
+        "drupal/bootstrap5": "^4.0",
+        "drupal/captcha": "^2.0",
+        "drupal/core-composer-scaffold": "^11.4",
+        "drupal/core-project-message": "^11.4",
+        "drupal/core-recommended": "^11.4",
+        "drupal/core-vendor-hardening": "^11.4",
+        "drupal/crop": "^2.3",
+        "drupal/ctools": "^4.1",
+        "drupal/entity_browser": "^2.12",
+        "drupal/focal_point": "^2.0",
+        "drupal/geocoder": "^4.13",
+        "drupal/geofield": "^1.52",
+        "drupal/gtranslate": "^3.0",
+        "drupal/honeypot": "^2.1",
+        "drupal/inline_entity_form": "^3.0",
+        "drupal/insert_view": "^3.0",
+        "drupal/leaflet": "^10.2",
+        "drupal/leaflet_more_maps": "^2.1",
+        "drupal/linkit": "^7.0",
+        "drupal/manage_display": "^3.0",
+        "drupal/metatag": "^2.1",
+        "drupal/pathauto": "^1.11",
+        "drupal/recaptcha": "^3.1",
+        "drupal/responsive_favicons": "^4.0",
+        "drupal/responsive_menu": "^4.4",
+        "drupal/video": "^3.0",
+        "drupal/views_bootstrap": "^5.5",
+        "drupal/webform": "^6.3",
+        "drupal/xmlsitemap": "^2.0",
+        "drupal/youtube": "^3.0@beta",
+        "drush/drush": "^13",
+        "geocoder-php/nominatim-provider": "^5.7",
+        "mglaman/composer-drupal-lenient": "^2.0",
+        "php": "^8.3",
+        "wikimedia/composer-merge-plugin": "^2.1"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/console-extend-plugin": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "drupal/core-vendor-hardening": true,
+            "php-http/discovery": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "wikimedia/composer-merge-plugin": true,
+            "mglaman/composer-drupal-lenient": true,
+            "symfony/runtime": true
+        }
+    },
+    "extra": {
+        "patches": {
+            "drupal/background_image": {
+                "Drupal 11 compatibility backport; retain 2.0.2 background entities": "patches/background-image-drupal11.patch"
+            }
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "./"
+            },
+            "file-mapping": {
+                "[web-root]/README.md": false
+            }
+        },
+        "installer-paths": {
+            "core": [
+                "type:drupal-core"
+            ],
+            "libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you\u2019ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/legacy-project template!               </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+                "  * Install the site: https://www.drupal.org/docs/8/install",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
+        },
+        "merge-plugin": {
+            "include": [
+                "composer.libraries.json"
+            ],
+            "recurse": false,
+            "replace": false,
+            "merge-extra": false
+        },
+        "drupal-lenient": {
+            "allowed-list": [
+                "drupal/background_image"
+            ]
+        },
+        "composer-exit-on-patch-failure": true
+    }
+}

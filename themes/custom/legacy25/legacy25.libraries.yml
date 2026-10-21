@@ -1,0 +1,5 @@
+global-styling:
+  css:
+    theme:
+      /libraries/fontawesome/css/all.min.css: { minified: true }
+      css/style.css: {}

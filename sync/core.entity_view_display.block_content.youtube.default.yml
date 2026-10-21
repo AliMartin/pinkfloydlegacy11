@@ -1,0 +1,74 @@
+uuid: 2e1329fa-ae70-4b17-a934-3534beae91af
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.youtube
+    - field.field.block_content.youtube.body
+    - field.field.block_content.youtube.field_youtube
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - youtube
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          6504ee8a-86a0-418e-b367-88b7e2c1015c:
+            uuid: 6504ee8a-86a0-418e-b367-88b7e2c1015c
+            region: content
+            configuration:
+              id: 'field_block:block_content:youtube:field_youtube'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: youtube_video
+                label: hidden
+                settings:
+                  youtube_size: responsive
+                  youtube_width: ''
+                  youtube_height: ''
+                  youtube_autoplay: false
+                  youtube_mute: false
+                  youtube_loop: false
+                  youtube_controls: false
+                  youtube_autohide: false
+                  youtube_iv_load_policy: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.youtube.default
+targetEntityType: block_content
+bundle: youtube
+mode: default
+content:
+  field_youtube:
+    type: youtube_video
+    label: hidden
+    settings:
+      youtube_size: responsive
+      youtube_width: ''
+      youtube_height: ''
+      youtube_autoplay: false
+      youtube_mute: false
+      youtube_loop: false
+      youtube_controls: false
+      youtube_autohide: false
+      youtube_iv_load_policy: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
